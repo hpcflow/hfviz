@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "hfviz"
+version = "0.1.0"
+description = "Visualisation tools for hpcflow workflows."
+authors = ["Adam <adam.jp@live.co.uk>"]
+license = "MPL-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+hpcflow-new2 = "^0.2.0a181"
+plotly = "^5.24.1"
+plotly-express = "^0.4.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+pytest = "^8.3.4"
+commitizen = "^4.0.0"
+ruff = "^0.8.1"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
